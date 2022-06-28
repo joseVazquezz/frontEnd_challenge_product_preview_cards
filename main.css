@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+html {
+    @import url(https://fonts.google.com/specimen/Montserrat);
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+   
+   
+}
+/* button */
+.btn-cart {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem 2rem;
+    border-radius:  1rem;
+    text-decoration: none;
+}
+.cart-img {
+    margin-right: .5rem;
+}
+
+.main-card {
+    background-color: aquamarine;
+    max-height: 50rem;
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-section {
+    flex: 1 1 20rem;
+}
+.image-section__desktop {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* mobile image */
+.image-section__mobile {
+    display: none;
+}
