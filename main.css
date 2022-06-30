@@ -18,13 +18,21 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   color: hsl(228, 12%, 48%);
+   font-size: 1.4rem;
+   font-weight: 500;
    
 }
 /* button */
 .btn-cart {
-    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: hsl(158, 36%, 37%);
-    padding: 1rem 2rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1.2rem 2rem;
     border-radius:  1rem;
     text-decoration: none;
 }
@@ -33,13 +41,9 @@ body {
 }
 
 .main-card {
-    background-color: aquamarine;
-    max-height: 50rem;
-    max-width: 40rem;
-    display: flex;
-    border-radius: 1rem;
-   
-    
+    max-height: 52rem;
+    max-width: 47rem;
+    display: flex;   
 }
 .image-section {
     flex: 1 1 20rem;
@@ -57,14 +61,36 @@ body {
 
 /* info section */
 .info-card {
+    text-align: left;
+    background-color:hsl(0, 0%, 100%);
     flex: 1 1 20rem;
-    padding: 2rem;
+    padding: 1.7rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 1rem;
+
 }
 .info-card h2 {
+    letter-spacing: 3px;
     text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.info-card h1 {
+  color:  hsl(212, 21%, 14%);
+}
+.info-card .price {
+    display: flex;
+    align-items: baseline;
+}
+.info-card .price .price__green{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    padding-right: 2rem;
+    font-weight: 800;
+}
+.info-card .price .price__crossed {
+    text-decoration: line-through;
 }
 
 
