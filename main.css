@@ -13,8 +13,11 @@ html {
     font-size: 62.5%;
 }
 body {
+    min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
 }
 /* button */
@@ -34,15 +37,34 @@ body {
     max-height: 50rem;
     max-width: 40rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 1rem;
+   
+    
 }
 .image-section {
     flex: 1 1 20rem;
 }
 .image-section__desktop {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     max-width: 100%;
     height: auto;
+    display: block;
+
+    
+}
+
+
+/* info section */
+.info-card {
+    flex: 1 1 20rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-card h2 {
+    text-transform: uppercase;
 }
 
 
