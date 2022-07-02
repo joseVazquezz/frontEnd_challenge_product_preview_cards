@@ -1,100 +1,143 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 html {
-    @import url(https://fonts.google.com/specimen/Montserrat);
-    box-sizing: border-box;
-    font-size: 62.5%;
+	
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 body {
-    min-height: 100vh;
-    background-color: hsl(30, 38%, 92%);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: hsl(228, 12%, 48%);
-   font-size: 1.4rem;
-   font-weight: 500;
-   
+	min-height: 100vh;
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(228, 12%, 48%);
+	font-size: 1.4rem;
+	font-weight: 500;
 }
 /* button */
 .btn-cart {
-    font-size: 1.4rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
-    padding: 1.2rem 2rem;
-    border-radius:  1rem;
-    text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(158, 36%, 37%);
+	color: hsl(0, 0%, 100%);
+	padding: 1.2rem 2rem;
+	border-radius: 1rem;
+	text-decoration: none;
 }
 .cart-img {
-    margin-right: .5rem;
+	margin-right: 0.5rem;
 }
 
 .main-card {
-    max-height: 52rem;
-    max-width: 47rem;
-    display: flex;   
+	max-height: 52rem;
+	max-width: 47rem;
+	display: flex;
 }
 .image-section {
-    flex: 1 1 20rem;
+	flex: 1 1 20rem;
+}
+.image-section__mobile {
+	display: none;
 }
 .image-section__desktop {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    max-width: 100%;
-    height: auto;
-    display: block;
-
-    
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
-
 
 /* info section */
 .info-card {
-    text-align: left;
-    background-color:hsl(0, 0%, 100%);
-    flex: 1 1 20rem;
-    padding: 1.7rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 1rem;
-
+	text-align: left;
+	background-color: hsl(0, 0%, 100%);
+	flex: 1 1 20rem;
+	padding: 1.7rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 1rem;
 }
 .info-card h2 {
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+.info-card .info-mobile {
+	display: none;
 }
 .info-card h1 {
-  color:  hsl(212, 21%, 14%);
+	color: hsl(212, 21%, 14%);
 }
 .info-card .price {
-    display: flex;
-    align-items: baseline;
+	display: flex;
+	align-items: baseline;
 }
-.info-card .price .price__green{
-    color: hsl(158, 36%, 37%);
-    font-size: 2rem;
-    padding-right: 2rem;
-    font-weight: 800;
+.info-card .price .price__green {
+	color: hsl(158, 36%, 37%);
+	font-size: 3rem;
+	padding-right: 2rem;
+	font-weight: 800;
 }
 .info-card .price .price__crossed {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
+/* mobile media */
+@media (max-width: 520px) {
+	.main-card {
+		flex-direction: column;
+        max-height: auto;
+		max-width: 30rem;
+        min-width: auto;
+	}
+    /* image section of the page */
+	.image-section__mobile {
+		max-width: 100%;
+		height: auto;
+		display: block;
+        border-radius: 1rem 1rem 0 0;
+	}
+	.image-section__desktop {
+		display: none;
+	}
 
-/* mobile image */
-.image-section__mobile {
-    display: none;
+    /* info section of the page */
+    .info-card {
+        border-radius: 0 0 1rem 1rem;
+    }
+	.info-card p {
+		padding-bottom: 3rem;
+	}
+	.info-card .info-mobile {
+		display: block;
+        padding: 1rem 0;
+	}
+.info-desktop {
+		display: none;
+	}
+
+    .btn-cart {
+        font-size: 1.4rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        padding: 1.2rem 2rem;
+        border-radius: 1rem;
+        text-decoration: none;
+    }
 }
