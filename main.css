@@ -43,6 +43,8 @@ body {
 	max-height: 52rem;
 	max-width: 47rem;
 	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 }
 .image-section {
 	flex: 1 1 20rem;
@@ -73,12 +75,15 @@ body {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-size: 1.4rem;
+	font-weight: 500;
 }
 .info-card .info-mobile {
 	display: none;
 }
 .info-card h1 {
 	color: hsl(212, 21%, 14%);
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
 }
 .info-card .price {
 	display: flex;
@@ -89,6 +94,8 @@ body {
 	font-size: 3rem;
 	padding-right: 2rem;
 	font-weight: 800;
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
 }
 .info-card .price .price__crossed {
 	text-decoration: line-through;
